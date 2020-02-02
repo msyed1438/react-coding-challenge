@@ -11,8 +11,10 @@ header.header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-shadow: 0 2px 6px 4px #808080;
+    box-shadow: 0 4px 5px -2px #1f1f1f;
     /* TODO: Adjust CSS Specificity on this tag */
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .header-title {

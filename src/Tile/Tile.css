@@ -1,0 +1,39 @@
+.media-tile {
+    background-color: #1D1D1D;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+}
+
+.media-tile .tile-img-container {
+    width: inherit;
+    height: inherit;
+}
+
+.media-tile .tile-img-container img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover; /*<---Lookup this property-->*/
+}
+
+.media-tile .tile-label {
+    text-align: center;
+    margin-top: -120px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+}
+
+.media-tile:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+
