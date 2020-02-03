@@ -36,4 +36,12 @@
         -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
+.media-tile-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
 

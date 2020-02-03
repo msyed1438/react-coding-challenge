@@ -1,0 +1,12 @@
+.footer-container {
+    background-color: #1D1D1D;
+    color: #FCFCFC;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 150%; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
