@@ -5,4 +5,4 @@ const path = require('path');
 
 app.use('/', express.static(path.join(__dirname, '../dist')))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`App listening on port ${port}!`))
