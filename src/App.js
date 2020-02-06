@@ -26,7 +26,9 @@ class App extends React.Component {
             <div className="app-container">
                 <Header />
                 <PageHeader />
-                <MediaTiles />
+                <main>
+                    <MediaTiles />
+                </main>
                 <Footer />
             </div>
         )
