@@ -10,3 +10,11 @@
     bottom: 0;
     width: 100%;
 }
+
+.social-app-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid cyan; */
+    flex-wrap: wrap;
+}

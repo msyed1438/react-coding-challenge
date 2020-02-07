@@ -1,0 +1,11 @@
+.store-links {
+    /* border: 2px solid magenta; */
+    display: flex;
+    flex-direction: row;
+}
+
+.store-icon {
+    height: 40px;
+    width: auto;
+    margin-right: 20px
+}
