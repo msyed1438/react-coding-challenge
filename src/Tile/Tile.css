@@ -1,14 +1,14 @@
 .media-tile {
-    background-color: #1D1D1D;
+    background-color: #1d1d1d;
     border: 2px solid black;
-    margin-right: 10px;
+    margin-right: 30px;
     margin-bottom: 10px;
     width: 130px;
     height: 200px;
     cursor: pointer;
     transition: 0.4s;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 25px 7px rgba(0, 0, 0, 0.25),
+        -5px -5px 25px 7px rgba(0, 0, 0, 0.22);
 }
 
 .media-tile .tile-img-container {
@@ -43,5 +43,3 @@
     padding-bottom: 10px;
     padding-right: 10px;
 }
-
-

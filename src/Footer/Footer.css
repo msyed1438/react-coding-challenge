@@ -1,14 +1,17 @@
 .footer-container {
-    background-color: #1D1D1D;
-    color: #FCFCFC;
+    background-color: #1d1d1d;
+    color: #fcfcfc;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 16px;
-    line-height: 150%; 
-    position: fixed;
+    line-height: 150%;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+    overflow: scroll;
+    max-height: 20%;
+    
 }
 
 .social-app-links {
@@ -17,4 +20,12 @@
     justify-content: space-between;
     /* border: 2px solid cyan; */
     flex-wrap: wrap;
+}
+
+.footer-links {
+    white-space: nowrap;
+}
+
+.footer-copyright {
+    white-space: nowrap;
 }

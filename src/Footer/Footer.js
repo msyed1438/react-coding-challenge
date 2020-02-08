@@ -6,11 +6,15 @@ import StoreLinks from './StoreLinks.js'
 const Footer = () => {
     return (
         <footer className="footer-container">
-            <div>
-                Home | Terms & Conditions | Privacy Policy | Collection
-                Statement | Help | Manage Account
+            <div className="footer-links">
+                <span>Home</span> | <span>Terms & Conditions</span> |{' '}
+                <span>Privacy Policy</span> | <span>Collection Statement</span>|
+                Help | Manage Account
             </div>
-            <div> Copyright Ⓒ 2016 DEMO Streaming. All rights reserved. </div>
+            <div className="footer-copyright">
+                {' '}
+                Copyright Ⓒ 2016 DEMO Streaming. All rights reserved.{' '}
+            </div>
             <div className="social-app-links">
                 <SocialLinks />
                 <StoreLinks />

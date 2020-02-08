@@ -2,10 +2,11 @@
     /* border: 2px solid magenta; */
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .store-icon {
-    height: 40px;
+    height: 30px;
     width: auto;
     margin-right: 20px
 }
