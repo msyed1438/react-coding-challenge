@@ -8,8 +8,8 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="footer-links">
                 <span>Home</span> | <span>Terms & Conditions</span> |{' '}
-                <span>Privacy Policy</span> | <span>Collection Statement</span>|
-                Help | Manage Account
+                <span>Privacy Policy</span> | <span>Collection Statement</span>{' '}
+                | Help | Manage Account
             </div>
             <div className="footer-copyright">
                 {' '}

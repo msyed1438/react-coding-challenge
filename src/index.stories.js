@@ -1,14 +1,8 @@
 import React from 'react';
-import { Button } from '@storybook/react/demo';
+import App from './App';
+import Footer from './Footer/Footer';
 
-export default { title: 'Button' };
+export default {title: 'Footer'};
 
-export const withText = () => <Button>Hello Button</Button>;
-
-export const withEmoji = () => (
-  <Button>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-);
+export const FooterExample = () => <Footer />
+// export const AppExample = () => <App />
