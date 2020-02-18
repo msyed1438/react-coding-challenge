@@ -6,10 +6,10 @@ import { Switch, Route, Link } from 'react-router-dom'
 const MediaTiles = () => {
     return (
         <div className="media-tiles">
-            <Link to="/movies">
+            <Link to="/movies" style={{ textDecoration: 'none' }}>
                 <Tile tileType="Movies" />
             </Link>
-            <Link to="/series">
+            <Link to="/series" style={{ textDecoration: 'none' }}>
                 <Tile tileType="Series" />
             </Link>
         </div>

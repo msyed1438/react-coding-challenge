@@ -8,12 +8,14 @@ import Header from './Header/Header'
 import PageHeader from './PageHeader/PageHeader'
 import MediaTiles from './Navigation/MediaTiles'
 import Footer from './Footer/Footer'
+import Movies from './Content/Movies'
+import Series from './Content/Series'
 
 //Data:
 import { entries } from '../feed/sample.json'
 
 //Routing:
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends React.Component {
     constructor(props) {
@@ -36,7 +38,17 @@ class App extends React.Component {
                     <Header />
                     <PageHeader />
                     <main>
-                        <MediaTiles />
+                        <Switch>
+                            <Route exact path="/">
+                                <MediaTiles />
+                            </Route>
+                            <Route path="/movies">
+                                <Movies />
+                            </Route>
+                            <Route path="/series">
+                                <Series />
+                            </Route>
+                        </Switch>
                     </main>
                     <Footer />
                 </Router>
