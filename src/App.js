@@ -25,10 +25,17 @@ class App extends React.Component {
         }
     }
 
-    componentDidMount() {
-        fetch('../feed/sample.json')
+    getFeedData() {
+        fetch('/feed')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(({ entries }) => {
+                console.log(entries)
+                return entries
+            })
+    }
+
+    componentDidMount() {
+        this.getFeedData()
     }
 
     render() {
