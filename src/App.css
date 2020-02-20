@@ -1,15 +1,8 @@
-
-
-
-
-
-
 .app-container {
     display: flex;
     flex-direction: column;
 }
 
-.app-container > * {
+.app-container > * { /* My dear children, you must all get some left and right padding :D */
     padding: 0px 150px 0px 150px;
 }
-

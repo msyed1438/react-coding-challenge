@@ -1,11 +1,13 @@
 import React from 'react'
 import './Series.css'
+import { Link } from 'react-router-dom';
+import BackButton from './BackButton';
 
 const Series = () => {
     return (
-        <div>
+        <div className="series-container">
             <Link to="/">
-                <button>Go back</button>
+                <BackButton />
             </Link>
             <h3>Series</h3>
         </div>

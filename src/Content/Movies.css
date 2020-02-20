@@ -1,0 +1,10 @@
+.movies-container {
+    padding-top: 30px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+

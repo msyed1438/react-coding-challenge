@@ -8,5 +8,6 @@
 .store-icon {
     height: 30px;
     width: auto;
-    margin-right: 20px
+    margin-right: 20px;
+    cursor: pointer;
 }

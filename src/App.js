@@ -1,4 +1,6 @@
 import React from 'react'
+
+//Styles for whole app
 import './reset.css'
 import './styles.css'
 import './App.css'
@@ -23,14 +25,25 @@ class App extends React.Component {
         this.state = {
             library: [],
         }
+
+        this.getFeedData = this.getFeedData.bind(this)
     }
 
     getFeedData() {
         fetch('/feed')
             .then(res => res.json())
             .then(({ entries }) => {
-                console.log(entries)
                 return entries
+            })
+            .then(streamData => {
+                this.setState(
+                    {
+                        library: streamData,
+                    },
+                    () => {
+                        console.log(this.state)
+                    }
+                )
             })
     }
 
@@ -44,13 +57,13 @@ class App extends React.Component {
                 <Router>
                     <Header />
                     <PageHeader />
-                    <main>
+                    <main className="content">
                         <Switch>
                             <Route exact path="/">
                                 <MediaTiles />
                             </Route>
                             <Route path="/movies">
-                                <Movies />
+                                <Movies movies={this.state.library} />
                             </Route>
                             <Route path="/series">
                                 <Series />

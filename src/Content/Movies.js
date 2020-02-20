@@ -1,14 +1,16 @@
 import React from 'react'
 import './Movies.css'
 import { Link } from 'react-router-dom'
+import BackButton from './BackButton';
+import MediaCard from './MediaCard';
 
-const Movies = () => {
+const Movies = ({movies}) => {
     return (
-        <div>
+        <div className="movies-container">
             <Link to="/">
-                <button>Go back</button>
+                <BackButton />
             </Link>
-            <h3>Movies</h3>
+            <div className="movies">Movies</div>
         </div>
     )
 }
