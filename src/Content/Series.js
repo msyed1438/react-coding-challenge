@@ -1,15 +1,15 @@
 import React from 'react'
 import './Series.css'
-import { Link } from 'react-router-dom';
-import BackButton from './BackButton';
+import { Link } from 'react-router-dom'
+import BackButton from './BackButton'
 
-const Series = () => {
+const Series = ({ series }) => {
     return (
         <div className="series-container">
             <Link to="/">
                 <BackButton />
             </Link>
-            <h3>Series</h3>
+            <div className="series">Series</div>
         </div>
     )
 }

@@ -1,3 +1,9 @@
 .series-container {
     padding-top: 30px;
 }
+
+.series {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

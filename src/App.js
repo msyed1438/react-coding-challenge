@@ -66,11 +66,11 @@ class App extends React.Component {
                                 <Movies movies={this.state.library} />
                             </Route>
                             <Route path="/series">
-                                <Series />
+                                <Series series={this.state.library}/>
                             </Route>
                         </Switch>
                     </main>
-                    <Footer />
+                    {/* <Footer /> */}
                 </Router>
             </div>
         )
