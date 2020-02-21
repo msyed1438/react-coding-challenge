@@ -2,6 +2,7 @@ import React from 'react'
 import './Series.css'
 import { Link } from 'react-router-dom'
 import BackButton from './BackButton'
+import MediaCard from './MediaCard'
 
 const Series = ({ series }) => {
     return (
@@ -9,9 +10,18 @@ const Series = ({ series }) => {
             <Link to="/">
                 <BackButton />
             </Link>
-            <div className="series">Series</div>
+            <div className="series">
+                {series.map(show => {
+                    let { title, images } = show
+                    const posterPath = images['Poster Art']['url'];
+                    return <MediaCard title={title} posterPath={posterPath} />
+                })}
+            </div>
         </div>
     )
 }
 
 export default Series
+
+
+

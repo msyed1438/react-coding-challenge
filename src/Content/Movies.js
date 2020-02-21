@@ -11,9 +11,11 @@ const Movies = ({ movies }) => {
                 <BackButton />
             </Link>
             <div className="movies">
-                {movies.map(movie => (
-                    <MediaCard />
-                ))}
+                {movies.map(movie => {
+                    let { title, images } = movie
+                    const posterPath = images['Poster Art']['url'];
+                    return <MediaCard title={title} posterPath={posterPath} />
+                })}
             </div>
         </div>
     )
