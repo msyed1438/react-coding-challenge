@@ -13,8 +13,14 @@ const Series = ({ series }) => {
             <div className="series">
                 {series.map(show => {
                     let { title, images } = show
-                    const posterPath = images['Poster Art']['url'];
-                    return <MediaCard title={title} posterPath={posterPath} />
+                    const posterPath = images['Poster Art']['url']
+                    return (
+                        <MediaCard
+                            title={title}
+                            posterPath={posterPath}
+                            key={title}
+                        />
+                    )
                 })}
             </div>
         </div>
@@ -22,6 +28,3 @@ const Series = ({ series }) => {
 }
 
 export default Series
-
-
-
