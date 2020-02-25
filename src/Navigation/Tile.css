@@ -1,14 +1,16 @@
 .media-tile {
     background-color: #1d1d1d;
     border: 2px solid black;
-    margin-right: 30px;
+    margin-right: 25px;
     margin-bottom: 10px;
     width: 130px;
     height: 200px;
     cursor: pointer;
     transition: 0.4s;
     box-shadow: 5px 5px 25px 7px rgba(0, 0, 0, 0.25),
-        -5px -5px 25px 7px rgba(0, 0, 0, 0.22);
+        -5px -5px 25px 7px #00000038, inset 0 0 4px #f5f3f3d0;
+    border: 0.5px solid white;
+    border-radius: 5px;
 }
 
 .media-tile .tile-img-container {
@@ -33,7 +35,7 @@
 .media-tile:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22), inset 0 0 10px #f5f3f3d0;
 }
 
 .media-tile-container {
