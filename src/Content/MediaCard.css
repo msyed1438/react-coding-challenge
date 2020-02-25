@@ -28,6 +28,12 @@
     );
     margin-bottom: 10px;
     flex-basis: auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.media-card-container:hover {
+    transform: scale(0.9, 0.9);
 }
 
 .title {
