@@ -1,8 +1,15 @@
 .app-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    min-height: 100vh;
 }
 
-.app-container > * { /* My dear children, you must all get some left and right padding :D */
+.app-container > * {
+    /* Left and right padding for all children */
     padding: 0px 150px 0px 150px;
+}
+
+.content {
+    padding-bottom: 9.5rem
 }

@@ -90,7 +90,7 @@ class App extends React.Component {
                             </Route>
                         </Switch>
                     </main>
-                    {/* <Footer /> */}
+                    <Footer />
                 </Router>
             </div>
         )
