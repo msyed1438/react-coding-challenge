@@ -19,11 +19,16 @@ import { entries } from '../feed/sample.json'
 //Routing:
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
+//Function to help sort alphanumerically
+import sortMediaObjectAlphanumerically from './helpers/sortMediaObjectAlphanumerically'
+
 class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             library: [],
+            movies: [],
+            series: [],
         }
 
         this.getFeedData = this.getFeedData.bind(this)
@@ -36,14 +41,11 @@ class App extends React.Component {
                 return entries
             })
             .then(streamData => {
-                this.setState(
-                    {
-                        library: streamData,
-                    },
-                    () => {
-                        console.log(this.state)
-                    }
-                )
+                this.setState({
+                    library: streamData,
+                })
+
+                return streamData
             })
     }
 
@@ -52,6 +54,24 @@ class App extends React.Component {
     }
 
     render() {
+        const dataForSeries = this.state.library
+            .filter(
+                mediaObject =>
+                    mediaObject.releaseYear >= 2010 &&
+                    mediaObject.programType === 'series'
+            )
+            .slice(0, 21)
+            .sort(sortMediaObjectAlphanumerically)
+
+        const dataForMovies = this.state.library
+            .filter(
+                mediaObject =>
+                    mediaObject.releaseYear >= 2010 &&
+                    mediaObject.programType === 'movie'
+            )
+            .slice(0, 21)
+            .sort(sortMediaObjectAlphanumerically)
+
         return (
             <div className="app-container">
                 <Router>
@@ -63,10 +83,10 @@ class App extends React.Component {
                                 <MediaTiles />
                             </Route>
                             <Route path="/movies">
-                                <Movies movies={this.state.library} />
+                                <Movies movies={dataForMovies} />
                             </Route>
                             <Route path="/series">
-                                <Series series={this.state.library}/>
+                                <Series series={dataForSeries} />
                             </Route>
                         </Switch>
                     </main>

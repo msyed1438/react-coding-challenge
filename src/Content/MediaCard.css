@@ -26,6 +26,7 @@
         rgb(95, 185, 245) 56%,
         rgb(81, 147, 245) 100%
     );
+    margin-right: 10px;
     margin-bottom: 10px;
     flex-basis: auto;
     cursor: pointer;
