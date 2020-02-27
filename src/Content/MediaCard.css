@@ -20,6 +20,7 @@
         rgba(162, 183, 233, 1) 22%,
         rgba(154, 154, 217, 1) 71%
     ); */
+    /* border: 1px solid white; */
     background: rgb(0, 152, 254);
     background: linear-gradient(
         180deg,

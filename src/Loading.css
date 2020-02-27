@@ -1,0 +1,10 @@
+.loading {
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+
+.loading-spinner {
+    height: 400px;
+    width: auto;
+}
